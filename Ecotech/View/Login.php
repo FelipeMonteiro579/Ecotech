@@ -1,3 +1,7 @@
+<?php
+include ("../Controller/loginController.php");
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -72,14 +76,20 @@
         <div>
         <img src="../../Imagens/logo.png" alt="logo" width=80 height=80>
         <h2>BEM-VINDO DE VOLTA</h2>
+
+         <!-- Exibindo mensagem de erro, se existir -->
+        <?php if (!empty($erro)): ?>
+            <div class="error"><?= $erro; ?></div>
+        <?php endif; ?>
+        
         <form method="POST" action="">
-            <label for = "email">E-mail: </label><br>
-            <input type="text" name="email">
+            <label for="email">E-mail: </label><br>
+            <input type="text" name="email" required>
             <br><br>
-            <label for = "senha">Senha: </label><br>
-            <input type="password" name="senha">
+            <label for="senha">Senha: </label><br>
+            <input type="password" name="senha" required>
             <br><br>
-            <button>Entrar</button>
+            <button type="submit">Entrar</button>
         </form>
         <small>Não tem uma conta? <a href="Cadastro.php">Cadastre-se aqui</a></small>
         </div>
