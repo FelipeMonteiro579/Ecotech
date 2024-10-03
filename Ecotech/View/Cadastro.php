@@ -9,7 +9,7 @@
         
         <style>
             body{
-                background-image: url("../../Imagens/background.jpg");
+                background-image: url("../Imagens/background.jpg");
                 background-size: cover;
             }
 
@@ -70,7 +70,7 @@
     </head>
     <body>
         <div>
-        <img src="../../Imagens/logo.png" alt="logo" width=80 height=80>
+        <img src="../Imagens/logo.png" alt="logo" width=80 height=80>
         <h2>BEM-VINDO</h2>
         <form method="POST" action="">
             <label for = "nome">Nome: </label><br>

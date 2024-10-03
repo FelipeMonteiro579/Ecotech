@@ -13,7 +13,7 @@ include ("../Controller/loginController.php");
         
         <style>
             body{
-                background-image: url("../../Imagens/background.jpg");
+                background-image: url("../Imagens/background.jpg");
                 background-size: cover;
             }
 
@@ -74,7 +74,7 @@ include ("../Controller/loginController.php");
     </head>
     <body>
         <div>
-        <img src="../../Imagens/logo.png" alt="logo" width=80 height=80>
+        <img src="../Imagens/logo.png" alt="logo" width=80 height=80>
         <h2>BEM-VINDO DE VOLTA</h2>
 
          <!-- Exibindo mensagem de erro, se existir -->
