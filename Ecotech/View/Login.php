@@ -32,7 +32,7 @@ include ("../Controller/loginController.php");
                 background-color: rgba(144, 207, 142, 1);
                 font-family: 'Saira Condensed', sans-serif;
                 display: block;
-                margin: 0 auto;
+                margin: 20px auto 0;
                 border: none;
                 width: 50%;
                 padding: 8px;
@@ -51,10 +51,13 @@ include ("../Controller/loginController.php");
             input{
                 width: 280px;
                 height: 30px;
+                margin-bottom: 15px;
             }
 
             label{
                 font-family: 'Saira Condensed', sans-serif;
+                margin-bottom: 5px;
+                display: block;
             }
             
             img{
@@ -70,6 +73,13 @@ include ("../Controller/loginController.php");
                 font-family: 'Saira Condensed', sans-serif;
             }
 
+            .erro{
+            color: red;
+            font-size: 13px;
+            display: block;
+            font-family: 'Saira Condensed', sans-serif;
+            }
+
         </style>    
     </head>
     <body>
@@ -77,18 +87,15 @@ include ("../Controller/loginController.php");
         <img src="../Imagens/logo.png" alt="logo" width=80 height=80>
         <h2>BEM-VINDO DE VOLTA</h2>
 
-         <!-- Exibindo mensagem de erro, se existir -->
-        <?php if (!empty($erro)): ?>
-            <div class="error"><?= $erro; ?></div>
-        <?php endif; ?>
-        
         <form method="POST" action="">
-            <label for="email">E-mail: </label><br>
+            <label for="email">E-mail: </label>
             <input type="text" name="email" required>
-            <br><br>
-            <label for="senha">Senha: </label><br>
+            <span class="erro"><?php echo $erro_email;?></span>
+            
+            <label for="senha">Senha: </label>
             <input type="password" name="senha" required>
-            <br><br>
+            <span class="erro"><?php echo $erro_senha; ?></span>
+
             <button type="submit">Entrar</button>
         </form>
         <small>Não tem uma conta? <a href="Cadastro.php">Cadastre-se aqui</a></small>

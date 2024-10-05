@@ -1,3 +1,6 @@
+<?php
+include ("../Controller/cadastroController.php");
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -28,7 +31,7 @@
                 background-color: rgba(144, 207, 142, 1);
                 font-family: 'Saira Condensed', sans-serif;
                 display: block;
-                margin: 0 auto;
+                margin: 20px auto 0;
                 border: none;
                 width: 50%;
                 padding: 8px;
@@ -47,10 +50,13 @@
             input{
                 width: 280px;
                 height: 30px;
+                margin-bottom: 15px; 
             }
 
             label{
                 font-family: 'Saira Condensed', sans-serif;
+                margin-bottom: 5px;
+                display: block;
             }
             
             img{
@@ -66,26 +72,35 @@
                 font-family: 'Saira Condensed', sans-serif;
             }
 
+            .erro{
+            color: red;
+            font-size: 13px;
+            display: block;
+            font-family: 'Saira Condensed', sans-serif;
+            }
+
         </style>    
     </head>
     <body>
         <div>
         <img src="../Imagens/logo.png" alt="logo" width=80 height=80>
         <h2>BEM-VINDO</h2>
+
         <form method="POST" action="">
-            <label for = "nome">Nome: </label><br>
-            <input type ="text" name="nome">
-            <br><br>
-            <label for = "email">E-mail: </label><br>
-            <input type="text" name="email">
-            <br><br>
-            <label for = "senha">Senha: </label><br>
-            <input type="password" name="senha">
-            <br><br>
-            <label for = "csenha">Confirmar Senha: </label><br>
-            <input type="password" name="csenha">
-            <br><br>
-            <button>Cadastrar</button>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" required>
+
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" required>
+
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" required>
+
+            <label for="csenha">Confirme a senha: </label>
+            <input type="password" name="csenha" required>
+            <span class="erro"><?php echo $erro_csenha; ?></span>
+
+            <button type="submit">Cadastrar</button>
         </form>
         <small>Já tem uma conta? <a href="Login.php">Clique aqui</a></small>
         </div>

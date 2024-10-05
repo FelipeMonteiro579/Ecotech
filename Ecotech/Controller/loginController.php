@@ -1,13 +1,14 @@
 <?php
 include ("../BD/conexao.php");
 
-$erro = '';
+$erro_email = '';
+$erro_senha = '';
 
 if(isset($_POST['email']) || isset($_POST['senha'])) {
     if(strlen($_POST['email']) == 0) {
-        echo "Preencha seu email";
+        $erro_email = "Preencha seu email";
     } else if (strlen($_POST['senha']) == 0) {
-        echo "Preencha sua senha";
+        $erro_senha = "Preencha sua senha";
     } else {
         $email = $mysqli->real_escape_string($_POST['email']);
         $senha = $mysqli->real_escape_string($_POST['senha']);
@@ -30,7 +31,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
             header("Location: telaInicial.php");
 
         } else {
-            echo "Falha ao logar! Email ou Senha incorretos";
+            $erro_email = "Falha ao logar! Email ou Senha incorretos";
         }
     }
 }
