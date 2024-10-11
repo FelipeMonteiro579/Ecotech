@@ -30,7 +30,7 @@
 
         li a{
             display: block;
-            color: white;
+            color: black;
             text-align: center;
             padding: 30px;
             text-decoration: none;
