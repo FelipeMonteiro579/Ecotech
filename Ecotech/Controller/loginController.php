@@ -1,38 +1,37 @@
 <?php
-include ("../BD/conexao.php");
+session_start();
+require_once("../BD/conexao.php");
 
 $erro_email = '';
 $erro_senha = '';
+$erro_login = '';
 
-if(isset($_POST['email']) || isset($_POST['senha'])) {
-    if(strlen($_POST['email']) == 0) {
+//if(isset($_POST['email']) || isset($_POST['senha'])) {
+if (isset($_POST["entrar"])) {
+    if (empty($_POST['email'])) {
         $erro_email = "Preencha seu email";
-    } else if (strlen($_POST['senha']) == 0) {
+    } else if (empty($_POST['senha'])) {
         $erro_senha = "Preencha sua senha";
     } else {
         $email = $mysqli->real_escape_string($_POST['email']);
         $senha = $mysqli->real_escape_string($_POST['senha']);
 
-        $sql_code = "SELECT * FROM usuario WHERE email_Usuario = '$email' AND senha_Usuario = '$senha'";
+        $sql_code = "SELECT * FROM usuario WHERE email_usuario = '$email' AND senha_usuario = '$senha'";
         $sql_query = $mysqli->query($sql_code) or die("Falha na execução do codigo SQL: " . $mysqli->error);
 
         $quantidade = $sql_query->num_rows;
 
-        if($quantidade == 1) {
+        if ($quantidade == 1) {
             $usuario = $sql_query->fetch_assoc();
 
-            if(!isset($_SESSION)) {
-                session_start();
+            $_SESSION['user'] = $usuario['id_usuario'];
+            $_SESSION['name'] = $usuario['nome_usuario'];
+
+            if (isset($_SESSION["user"])) {
+                header("Location: ../View/telaInicial.php");
             }
-
-            $_SESSION['user'] = $usuario['id_Usuario'];
-            $_SESSION['name'] = $usuario['nome_Usuario'];
-
-            header("Location: telaInicial.php");
-
         } else {
-            $erro_email = "Falha ao logar! Email ou Senha incorretos";
+            $erro_login = "Falha ao logar! Email ou Senha incorretos";
         }
     }
 }
-?>

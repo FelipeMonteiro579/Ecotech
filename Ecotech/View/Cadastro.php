@@ -100,7 +100,7 @@ include ("../Controller/cadastroController.php");
             <input type="password" name="csenha" required>
             <span class="erro"><?php echo $erro_csenha; ?></span>
 
-            <button type="submit">Cadastrar</button>
+            <button type="submit" name="cadastrar">Cadastrar</button>
         </form>
         <small>Já tem uma conta? <a href="Login.php">Clique aqui</a></small>
         </div>
