@@ -29,7 +29,7 @@ if (isset($_POST['email']) && isset($_POST['senha']) && isset($_POST['nome']) &&
 
             if ($sql_query) {
                 echo "Usuário cadastrado com sucesso!";
-                header("Location: login.php");
+                header("Location: Login.php");
             } else {
                 echo "Erro ao cadastrar o usuário: " . $mysqli->error;
             }

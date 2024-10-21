@@ -28,7 +28,7 @@ if(isset($_POST['email']) || isset($_POST['senha'])) {
             $_SESSION['user'] = $usuario['id_Usuario'];
             $_SESSION['name'] = $usuario['nome_Usuario'];
 
-            header("Location: telaInicial.php");
+            header("Location: TelaInicial.php");
 
         } else {
             $erro_email = "Falha ao logar! Email ou Senha incorretos";

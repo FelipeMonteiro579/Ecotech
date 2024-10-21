@@ -1,6 +1,4 @@
-<?php
-include ("../Controller/loginController.php");
-?>
+<?php include ("../Controller/loginController.php");?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -13,9 +11,10 @@ include ("../Controller/loginController.php");
         <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&display=swap" rel="stylesheet">
 
     </head>
+
     <body>
         <div>
-        <img src="../Imagens/logo.png" alt="logo" width=80 height=80>
+        <img src="../Imagens/logo.svg" alt="logo" width=80 height=80>
         <h2>BEM-VINDO DE VOLTA</h2>
 
         <form method="POST" action="">

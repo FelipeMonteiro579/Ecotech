@@ -11,7 +11,7 @@
     </head>
     <body>
         <div>
-        <img src="../Imagens/logo.png" alt="logo" width=80 height=80>
+        <img src="../Imagens/logo.svg" alt="logo" width=80 height=80>
         <h2>Esqueceu à senha?</h2>
 
         <form method="POST" action="">
