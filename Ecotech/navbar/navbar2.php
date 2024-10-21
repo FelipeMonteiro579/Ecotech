@@ -36,11 +36,12 @@
             padding-top: 5px;
         }
 
-        .Entrar a{
+        .entrar{
         background-color: #28a745;
+        font-weight: bold;
     }
 
-    .Entrar a:hover:not(.active){
+    .entrar a:hover:not(.active){
         background-color: #1e6b30;
     }
 </style>
@@ -50,10 +51,10 @@
         <nav>
             <ul>
                 <img id="logo" src="../Imagens/logo.svg" alt="logo" width=80 height=80>
-                <li class="Entrar"><a href="#">ENTRAR</a></li>
-                <li><a href="#">SOBRE</a></li>
-                <li><a href="#">MISSÃO</a></li>
-                <li><a href="#">INICIO</a></li>    
+                <li class="entrar"><a href="#">ENTRAR</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Missão</a></li>
+                <li><a href="#">Inicio</a></li>    
             </ul>
         </nav>
     ]</div>

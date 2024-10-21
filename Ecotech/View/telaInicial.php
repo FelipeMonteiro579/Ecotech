@@ -15,7 +15,7 @@
 
     <body>
     <div class="container">
-        <img src="../Imagens/logo.svg" alt="logo" width=300 height=300>
+        <img src="../Imagens/logo.svg" alt="logo" width=500 height=500>
         <h1>BEM-VINDO</h1>
     </div>
 

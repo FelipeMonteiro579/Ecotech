@@ -35,6 +35,15 @@
             padding-left: 50px;
             padding-top: 5px;
         }
+
+        .sair{
+            background-color: #28a745;
+            font-weight: bold;
+        }
+
+        .sair a:hover:not(.active){
+            background-color: #1e6b30;
+        }
         </style>
         
 <header>
@@ -42,9 +51,9 @@
         <nav>
             <ul>
                 <img id="logo" src="../Imagens/logo.svg" alt="logo" width=80 height=80>
-                <li><a href="#">Sair</a></li>
+                <li class="sair"><a href="#">SAIR</a></li>
                 <li><a href="#">Configurações</a></li>
-                <li><a href="#">Dados Coletados</a></li>
+                <li><a href="#">Dispositivos</a></li>
                 <li><a href="#">Início</a></li>
             </ul>
         </nav>
