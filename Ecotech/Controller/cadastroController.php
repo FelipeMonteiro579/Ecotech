@@ -23,14 +23,14 @@ if(isset($_POST['cadastrar'])){
         $senha = $mysqli->real_escape_string($_POST['senha']);
         $nome = $mysqli->real_escape_string($_POST['nome']);
 
-        $sql_check = "SELECT * FROM usuario WHERE email_Usuario = '$email'";
+        $sql_check = "SELECT * FROM usuario WHERE email_usuario = '$email'";
         $sql_check_query = $mysqli->query($sql_check);
 
         if ($sql_check_query->num_rows > 0) {
             $erro_email = "Este email já está cadastrado!";
         } else {
 
-            $sql_code = "INSERT INTO usuario (nome_Usuario, email_Usuario, senha_Usuario) VALUES ('$nome', '$email', '$senha')";
+            $sql_code = "INSERT INTO usuario (nome_usuario, email_usuario, senha_usuario) VALUES ('$nome', '$email', '$senha')";
             $sql_query = $mysqli->query($sql_code);
 
             if ($sql_query) {
