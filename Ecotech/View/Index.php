@@ -12,6 +12,6 @@
     </head>
 
     <body>
-        <h1 class="BemVindo">BEM-VINDO</h1>
+        <h1 class="BemVindo"></h1>
     </body>
 <html>
