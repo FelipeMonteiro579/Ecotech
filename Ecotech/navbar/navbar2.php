@@ -11,6 +11,19 @@
         transition: 0.3s;
     }
 
+    .logo-container {
+        display: flex;
+        align-items: center; 
+        gap: 10px; 
+    }
+
+    .ecotech{
+        font-size: 24px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: bold;
+    }
+
     nav{
         display: flex;
         justify-content: space-between;
@@ -97,13 +110,15 @@
             opacity: 1;
             transform: translateX(0);
         }
-        
     }
 </style>
         
 <header>
     <nav>
+        <div class="logo-container">
         <img id="logo" src="../Imagens/logo.svg" alt="logo" width=80 height=80>
+        <a class="ecotech" href="/">Ecotech</a>
+        </div>
         <div class="mobile-menu">
             <div class="line1"></div>
             <div class="line2"></div>
