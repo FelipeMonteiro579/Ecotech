@@ -19,11 +19,8 @@ session_start();
 
 <body>
     <div class="container">
-        <img src="../Imagens/logo.svg" alt="logo" width=500 height=500>
-        <h1>BEM-VINDO</h1>
-        <?php
-        echo "{$_SESSION["name"]} => {$_SESSION["user"]}";
-        ?>
+        <img src="../Imagens/logo.svg" alt="logo" width=300 height=300>
+        <h1>BEM-VINDO <?php echo strtoupper($_SESSION["name"]);;?></h1>
     </div>
 
 </body>
