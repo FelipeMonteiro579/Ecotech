@@ -19,13 +19,20 @@ div{
 }
 
 button{
-    background-color: rgba(144, 207, 142, 1);
+    background-color: #28a745;    
     font-family: 'Saira Condensed', sans-serif;
     display: block;
     margin: 20px auto 0;
     border: none;
     width: 50%;
     padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover{
+    background-color: #1e6b30;
+    transform: scale(1.05);
 }
 
 input:focus {

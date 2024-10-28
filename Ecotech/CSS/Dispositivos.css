@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 80vh;
+}
+
+.esquerda{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+}
+
+table{
+    background-color: black;
+    width: 100%;
+    }
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+.direita{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    gap: 15px;
+}
+
+/*
+.nivel-de-agua, .temp-umidade {
+    border: 3px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.barra-de-agua {
+    width: 100%;
+    height: 30px;
+    border: 1px solid black;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+.agua {
+    height: 100%;
+    width: 0%;
+    background-color: green;
+    transition: width 0.5s, background-color 0.5s;
+}*/
+
+.adicionar{
+    background-color: #28a745;    
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 5vh;
+    right: 3vw;
+    font-size: 18px;
+    border: none;
+    width: 10%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.adicionar:hover{
+    background-color: #1e6b30;
+    transform: scale(1.05);
+}
+

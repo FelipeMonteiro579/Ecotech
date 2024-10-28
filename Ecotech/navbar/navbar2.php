@@ -31,6 +31,7 @@
         background: rgba(217, 217, 217, 1);
         height: 12vh;
         padding: 0 50px;
+        position: relative;
     }
 
 
@@ -70,10 +71,11 @@
     .mobile-menu div{
         width: 32px;
         height: 2px;
-        background: white;
+        background: black;
         margin: 8px;
     }
 
+    /*
     @media (max-width: 999px){
         .nav-list{
             position: absolute;
@@ -111,13 +113,14 @@
             transform: translateX(0);
         }
     }
+    */
 </style>
         
 <header>
     <nav>
         <div class="logo-container">
         <img id="logo" src="../Imagens/logo.svg" alt="logo" width=80 height=80>
-        <a class="ecotech" href="/">Ecotech</a>
+        <a class="ecotech" href="index.php">Ecotech</a>
         </div>
         <div class="mobile-menu">
             <div class="line1"></div>
@@ -125,7 +128,7 @@
             <div class="line3"></div>
         </div>
         <ul class="nav-list">
-            <li><a href="#">Inicio</a></li>
+            <li><a href="#inicio">Inicio</a></li>
             <li><a href="#">Missão</a></li>
             <li><a href="#">Sobre</a></li>                
             <li class="entrar"><a href="Login.php">ENTRAR</a></li> 
@@ -133,4 +136,3 @@
     </nav>    
 </header>
 <main></main>
-<script src="../navbar/mobile-navbar.js"></script>

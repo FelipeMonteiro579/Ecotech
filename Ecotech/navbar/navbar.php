@@ -82,7 +82,7 @@
     <nav>
         <div class="logo-container">
         <img id="logo" src="../Imagens/logo.svg" alt="logo" >
-        <a class="ecotech" href="/">Ecotech</a>
+        <a class="ecotech" href="">Ecotech</a>
         </div>
         <ul class="nav-list">
             <li><a href="telaInicial.php">Início</a></li>

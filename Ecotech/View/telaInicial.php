@@ -16,13 +16,9 @@ session_start();
 </head>
 
 <body>
-
-
     <div class="container">
         <img id="main-logo" src="../Imagens/logo.svg" alt="logo">
         <h1>BEM-VINDO <?php echo strtoupper($_SESSION["name"]);;?></h1>
     </div>
-
 </body>
-
 </html>
