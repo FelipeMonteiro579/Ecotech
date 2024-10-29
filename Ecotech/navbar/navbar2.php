@@ -63,6 +63,7 @@
         background-color: #1e6b30;
     }
 
+    /*
     .mobile-menu{
         display: none;
         cursor: pointer;
@@ -75,7 +76,7 @@
         margin: 8px;
     }
 
-    /*
+    
     @media (max-width: 999px){
         .nav-list{
             position: absolute;

@@ -35,7 +35,7 @@
             </table>
         </div>
 
-        <!-- Seção da direita: gráficos -->
+        <!-- Seção da direita: gráficos 
         <div class="direita">
             <div class="nivel-de-agua">
                 <h3>Nível d'água</h3>
@@ -49,6 +49,7 @@
                 <canvas id="tempUmidGrafico"></canvas>
             </div>
         </div>
+-->
     </div>
     
     <button class=adicionar type="submit" name="adicionar">Adicionar</button>
