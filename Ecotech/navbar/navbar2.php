@@ -31,7 +31,9 @@
         background: rgba(217, 217, 217, 1);
         height: 12vh;
         padding: 0 50px;
-        position: relative;
+        position: fixed;
+        width: 100%;
+        top: 0;
     }
 
 
@@ -62,59 +64,6 @@
     .entrar:hover{
         background-color: #1e6b30;
     }
-
-    /*
-    .mobile-menu{
-        display: none;
-        cursor: pointer;
-    }
-
-    .mobile-menu div{
-        width: 32px;
-        height: 2px;
-        background: black;
-        margin: 8px;
-    }
-
-    
-    @media (max-width: 999px){
-        .nav-list{
-            position: absolute;
-            top:8vh;
-            right: 0;
-            width: 50vw;
-            height: 92vh;
-            background: black;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            transform: translateX(100%);
-            transition: transform 0.3s ease-in;
-        }
-        .nav-list li{
-            margin-left: 0;
-            opacity: 0;;
-        }
-        .mobile-menu{
-            display: block;
-        }
-    }
-
-    .nav-list.active{
-        transform: translateX(0);
-    }
-
-    @keyframes navLinkFade {
-        from {
-            opacity: 0;
-            transform: translateX(50px);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-    */
 </style>
         
 <header>
@@ -130,8 +79,8 @@
         </div>
         <ul class="nav-list">
             <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#">Missão</a></li>
-            <li><a href="#">Sobre</a></li>                
+            <li><a href="#desafio">Desafio</a></li>
+            <li><a href="#sobre">Sobre</a></li>                
             <li class="entrar"><a href="Login.php">ENTRAR</a></li> 
         </ul>
     </nav>    
