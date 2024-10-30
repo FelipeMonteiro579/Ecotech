@@ -6,41 +6,53 @@
         <title>Index</title>
         
         <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/Dispositivos.css">
         <?php include("../navbar/navbar.php");?>
-
-        <style>
-
-            body{
-                margin: 0;
-                height: 100vh;
-                font-family: 'Saira Condensed', sans-serif;
-            }
-            table{
-                background-color: black;
-                position: absolute;
-                width: 700px;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        </style>
 
     </head>
 
     <body>
-        <table>
-            <tr bgcolor="grey" align="center">
-                <th width="100">Data e Hora</th>
-                <th width="100">Nome do Dispositivo</th>
-                <th width="100">Temperatura</th>
-                <th width="100">Umidade do Solo</th>
-            </tr>
-            <tr bgcolor="lightgrey" align="center">
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-                <td>Dados</td>
-            </tr>
-        </table>
-    </body>
+    <div class="container">
+        <!-- Seção da esquerda: tabela -->
+        <div class="esquerda">
+            <table>
+                <thead>
+                    <tr bgcolor="grey" align="center">
+                        <th width="100">Data e Hora</th>
+                        <th width="100">Nome do Dispositivo</th>
+                        <th width="100">Temperatura</th>
+                        <th width="100">Umidade do Solo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr bgcolor="lightgrey" align="center">
+                        <td>Dados</td>
+                        <td>Dados</td>
+                        <td>Dados</td>
+                        <td>Dados</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Seção da direita: gráficos 
+        <div class="direita">
+            <div class="nivel-de-agua">
+                <h3>Nível d'água</h3>
+                <div class="barra-de-agua">
+                    <div class="agua" id="water-bar"></div>
+                </div>
+            </div>
+
+            <div class="temp-umidade">
+                <h3>Gráfico de Temperatura e Umidade do Solo</h3>
+                <canvas id="tempUmidGrafico"></canvas>
+            </div>
+        </div>
+-->
+    </div>
+    
+    <button class=adicionar type="submit" name="adicionar">Adicionar</button>
+
+</body>
 <html>

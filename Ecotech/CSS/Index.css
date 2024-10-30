@@ -1,7 +1,102 @@
 *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
     font-family: 'Saira Condensed', sans-serif;
 }
 
-.BemVindo{
-    
+.index-container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding-top: 12vh;
 }
+
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+    width: 100%; 
+}
+
+.conteudo-invertido{
+    background-color: black;
+    color: white;
+    flex-direction: row-reverse;
+    margin: 0;
+}
+
+h1{
+    position: relative;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.linha{
+    border: none;            
+    border-top: 9px solid black;
+    margin: 0;           
+    width: 100%;            
+}
+
+.linha-invertida{
+    border: none;            
+    border-top: 9px solid white;
+    margin: 0;           
+    width: 100%; 
+}
+
+.esquerda, .direita{
+    flex: 1 1 50%; 
+    padding: 20px;
+}
+
+.esquerda{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.esquerda p{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.direita img{
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 2px; 
+}
+
+.texto1{
+    margin-left: 7.5vh;
+}
+
+.logo{
+    max-width: 80%;
+    height: auto;
+    margin-left: 8vh;
+}
+
+.btn-comecar{
+    background-color: #28a745;    
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    align-self: flex-start;
+    margin-top: 10px;
+    cursor: pointer;
+}
+

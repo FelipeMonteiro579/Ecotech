@@ -1,61 +1,94 @@
 <style>
-        *{
-            margin: auto;
-            font-family: 'Saira Condensed', sans-serif;
-        }
 
-        ul{
-            list-style-type: none;
-            padding: 0;
-            overflow: hidden;
-            background-color: rgba(217, 217, 217, 1);
-            position: fixed;
-            top: 0;
-            width: 100%;
-        }
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Saira Condensed', sans-serif;
+    }
 
-        li{
-            color: black;
-            float: right;
-        }
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
 
-        li a{
-            display: block;
-            color: black;
-            text-align: center;
-            padding: 30px;
-            text-decoration: none;
-        }
+    a{
+        color: black;
+        text-decoration: none;
+        transition: 0.3s;
+    }
 
-        li a:hover:not(.active){ /*Mostrar quando o mouse está em cima do botão e trocar a cor*/
-            background-color: #c0c1bf;
-        }
+    .logo-container {
+        display: flex;
+        align-items: center;
+        height: 10vh;
+    }
 
-        #logo{
-            padding-left: 50px;
-            padding-top: 5px;
-        }
+    #logo
+    {
+        height: 100%;
+        width: auto;
+        margin-right: 1.5vw;
+        margin-left: 0.5vw;
+    }
 
-        .sair{
-            background-color: #28a745;
-            font-weight: bold;
-        }
+    .ecotech{
+        font-size: 1.5vw;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: bold;
+    }
 
-        .sair a:hover:not(.active){
-            background-color: #1e6b30;
-        }
-        </style>
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(217, 217, 217, 1);
+        height: 12vh;
+        padding: 0 50px;
+    }
+
+
+    .nav-list{
+        list-style: none;
+        display: flex;
+        gap: 10px
+    }
+
+    
+    .nav-list li{
+        letter-spacing: 3px;
+        font-size: 1vw;
+        margin-left: 0;
+        padding: 10px 20px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .nav-list li:hover{
+        background-color: #c0c1bf;
+        transform: scale(1.05); 
+    }
+
+    .sair{
+        background-color: #28a745;    
+        font-weight: bold;
+    }
+
+    .sair:hover{
+        background-color: #1e6b30;
+    }
+    </style>
         
 <header>
-    <div class="menu">
-        <nav>
-            <ul>
-                <img id="logo" src="../Imagens/logo.svg" alt="logo" width=80 height=80>
-                <li class="sair"><a href="#">SAIR</a></li>
-                <li><a href="#">Configurações</a></li>
-                <li><a href="#">Dispositivos</a></li>
-                <li><a href="#">Início</a></li>
-            </ul>
-        </nav>
-    ]</div>
-    </header>
+    <nav>
+        <div class="logo-container">
+        <img id="logo" src="../Imagens/logo.svg" alt="logo" >
+        <a class="ecotech" href="">Ecotech</a>
+        </div>
+        <ul class="nav-list">
+            <li><a href="telaInicial.php">Início</a></li>
+            <li><a href="Dispositivos.php">Dispositivos</a></li>
+            <li><a href="#">Configurações</a></li>
+            <li class="sair"><a href="Login.php">SAIR</a></li>
+        </ul>
+    </nav>
+</header>
