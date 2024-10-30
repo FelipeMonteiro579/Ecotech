@@ -14,7 +14,8 @@
     .logo-container {
         display: flex;
         align-items: center; 
-        gap: 10px; 
+        gap: 10px;
+        margin-left: 12px;
     }
 
     .ecotech{
@@ -34,6 +35,7 @@
         position: fixed;
         width: 100%;
         top: 0;
+        z-index: 10;
     }
 
 
@@ -64,8 +66,13 @@
     .entrar:hover{
         background-color: #1e6b30;
     }
+
+    html{
+    scroll-behavior: smooth;
+    }
+
 </style>
-        
+
 <header>
     <nav>
         <div class="logo-container">

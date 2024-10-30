@@ -22,6 +22,8 @@ button{
     background-color: #28a745;    
     font-family: 'Saira Condensed', sans-serif;
     display: block;
+    text-transform: uppercase;
+    font-weight: bold;
     margin: 20px auto 0;
     border: none;
     width: 50%;

@@ -20,6 +20,8 @@ div{
 
 button{
     background-color: #28a745;    
+    text-transform: uppercase;
+    font-weight: bold;
     display: block;
     margin: 20px auto 0;
     border: none;

@@ -21,6 +21,8 @@ div{
 .enviar{
     background-color: #28a745;    
     display: block;
+    text-transform: uppercase;
+    font-weight: bold;
     margin: 0 auto;
     margin-bottom: 15px;
     border: none;

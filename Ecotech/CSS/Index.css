@@ -10,7 +10,8 @@ body{
 
 .index-container{
     display: grid;
-    grid-template-rows: auto 1fr auto; 
+    grid-template-rows: auto 1fr auto;
+    padding-top: 12vh;
 }
 
 
