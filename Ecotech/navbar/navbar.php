@@ -85,9 +85,9 @@
         <a class="ecotech" href="">Ecotech</a>
         </div>
         <ul class="nav-list">
-            <li><a href="telaInicial.php">Início</a></li>
+            <li><a href="TelaInicial.php">Início</a></li>
             <li><a href="Dispositivos.php">Dispositivos</a></li>
-            <li><a href="#">Configurações</a></li>
+            <li><a href="Configuracao.php">Configurações</a></li>
             <li class="sair"><a href="Login.php">SAIR</a></li>
         </ul>
     </nav>

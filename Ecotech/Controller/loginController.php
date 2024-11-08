@@ -16,7 +16,7 @@ if (isset($_POST["entrar"])) {
         $email = $mysqli->real_escape_string($_POST['email']);
         $senha = $mysqli->real_escape_string($_POST['senha']);
 
-        $sql_code = "SELECT * FROM usuario WHERE email_usuario = '$email' AND senha_usuario = '$senha'";
+        $sql_code = "SELECT * FROM usuario WHERE email_usuario = '$email'";
         $sql_query = $mysqli->query($sql_code) or die("Falha na execução do codigo SQL: " . $mysqli->error);
 
         $quantidade = $sql_query->num_rows;
@@ -24,11 +24,13 @@ if (isset($_POST["entrar"])) {
         if ($quantidade == 1) {
             $usuario = $sql_query->fetch_assoc();
 
-            $_SESSION['user'] = $usuario['id_usuario'];
-            $_SESSION['name'] = $usuario['nome_usuario'];
+            if (password_verify($senha, $usuario["senha_usuario"])) {
+                $_SESSION['user'] = $usuario['id_usuario'];
+                $_SESSION['name'] = $usuario['nome_usuario'];
 
-            if (isset($_SESSION["user"])) {
-                header("Location: ../View/telaInicial.php");
+                if (isset($_SESSION["user"])) {
+                    header("Location: ../View/TelaInicial.php");
+                }
             }
         } else {
             $erro_login = "Falha ao logar! Email ou Senha incorretos";

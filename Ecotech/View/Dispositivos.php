@@ -1,20 +1,30 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" contet="width=device-width, initial-scale=1.0">
-        <title>Index</title>
+        <title>Dispositivos</title>
         
         <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@400;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../CSS/Dispositivos.css">
+        <link rel="stylesheet" href="#">
         <?php include("../navbar/navbar.php");?>
 
     </head>
 
     <body>
+        <?php
+            require_once("../Controller/dispositivoController.php");
+        ?>
+    </body>
+<!--
+    <body>
     <div class="container">
         <!-- Seção da esquerda: tabela -->
-        <div class="esquerda">
+        <!--<div class="esquerda">
             <table>
                 <thead>
                     <tr bgcolor="grey" align="center">
@@ -49,10 +59,11 @@
                 <canvas id="tempUmidGrafico"></canvas>
             </div>
         </div>
--->
+
     </div>
     
     <button class=adicionar type="submit" name="adicionar">Adicionar</button>
 
 </body>
+-->
 <html>
