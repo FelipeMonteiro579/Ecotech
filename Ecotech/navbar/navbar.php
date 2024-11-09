@@ -88,7 +88,7 @@
             <li><a href="telaInicial.php">Início</a></li>
             <li><a href="Dispositivos.php">Dispositivos</a></li>
             <li><a href="#">Configurações</a></li>
-            <li class="sair"><a href="Login.php">SAIR</a></li>
+            <li class="sair"><a href="../Controller/logoutController.php">SAIR</a></li>
         </ul>
     </nav>
 </header>

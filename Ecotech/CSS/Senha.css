@@ -63,6 +63,10 @@ small{
     font-size: 0.8em;
 }
 
+small a{
+    text-decoration: none;
+}
+
 .erro{
 color: red;
 font-size: 13px;

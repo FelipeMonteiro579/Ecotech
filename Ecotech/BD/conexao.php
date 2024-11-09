@@ -13,10 +13,4 @@ try {
     $erro = throw new Exception("Erro ao tentar se conectar ao banco", 1);
     echo "$erro";
 }
-
-/*
-if($mysqli->error) {
-    die("Falha ao conectar no banco de dados " . $mysqli->error);
-}
-*/
 ?>
