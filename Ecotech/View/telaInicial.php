@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+// Verificar se o usuário está logado
+if (!isset($_SESSION['user'])) { 
+    header("Location: ../View/Login.php");
+    exit();
+}
 ?>
 
 <!DOCTYPE html>

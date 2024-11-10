@@ -30,7 +30,7 @@
             <span class="erro"><?php echo $erro_login; ?></span>
             <button type="submit" name="entrar">Entrar</button>
         </form>
-        <small>Não tem uma conta? <a href="Cadastro.php">Cadastre-se aqui</a></small>
+        <small class="Cadastro">Não tem uma conta? <a href="Cadastro.php">Cadastre-se aqui</a></small>
     </div>
 </body>
 
