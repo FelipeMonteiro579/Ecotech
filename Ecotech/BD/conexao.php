@@ -1,7 +1,7 @@
 <?php
 $usuario = 'root';
 $senha = '';
-$database = 'Ecotech';
+$database = 'ecotech';
 $host = 'localhost';
 
 try {
