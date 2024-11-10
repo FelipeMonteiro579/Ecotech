@@ -8,28 +8,39 @@ body{
     font-family: 'Saira Condensed', sans-serif;
 }
 
+
 .container{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px;
     height: 80vh;
+    margin-top: 20px;
 }
-
+/*
 .esquerda{
     display: flex;
     justify-content: center;
     width: 60%;
 }
+*/
+
+.tabela-topo{
+    background: rgba(217, 217, 217, 1);
+}
 
 table{
-    background-color: black;
+    background-color: #ffffff;
+    border-collapse: collapse;
     width: 100%;
     }
 
-th, td {
+th, td{
+    color: rgb(0, 0, 0);
     padding: 10px;
     text-align: center;
+    border: 3px solid #000000;
 }
 
 /*
@@ -61,23 +72,19 @@ th, td {
     transition: width 0.5s, background-color 0.5s;
 }*/
 
-.adicionar{
-    background-color: #28a745;    
+.atualizar{
+    background-color: #28a745;
     font-weight: bold;
     text-transform: uppercase;
-    position: absolute;
-    bottom: 5vh;
-    right: 3vw;
     font-size: 18px;
     border: none;
-    width: 10%;
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px; /* Adiciona um espaço entre a tabela e o botão */
 }
 
-.adicionar:hover{
+.atualizar:hover{
     background-color: #1e6b30;
     transform: scale(1.05);
 }
-
