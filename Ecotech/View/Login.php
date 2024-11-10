@@ -25,7 +25,7 @@
             <label for="senha">Senha: </label>
             <input type="password" name="senha" required>
             <span class="erro"><?php echo $erro_senha; ?></span>
-            <small class="esqueceuSenha"><a href="Senha.php">Esqueceu à senha?</a></small>
+            <small class="esqueceuSenha"><a href="Redefinir.php">Esqueceu à senha?</a></small>
             
             <span class="erro"><?php echo $erro_login; ?></span>
             <button type="submit" name="entrar">Entrar</button>

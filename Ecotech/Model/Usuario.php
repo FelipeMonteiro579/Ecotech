@@ -2,14 +2,13 @@
 
 class Usuario 
 {
-    private $id_usuario;
-    private $nome_usuario;
-    private $email_usuario; 
-    private $senha_usuario;
-
-    //Construtor
-    public function __construct($id, $nome, $email, $senha) {
-        $this->id_usuario = $id;
+    public $id_usuario;
+    public $nome_usuario;
+    public $email_usuario; 
+    public $senha_usuario;
+    
+    //Construtor    
+    public function __construct(string $nome, string $email, string $senha) {
         $this->nome_usuario = $nome;
         $this->email_usuario = $email;
         $this->senha_usuario = $senha;
@@ -48,6 +47,5 @@ class Usuario
         $this->senha_usuario = $senha;
     }
 
-    //Métodos
 }
 ?> 
