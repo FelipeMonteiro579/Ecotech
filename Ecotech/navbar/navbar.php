@@ -86,8 +86,8 @@
         </div>
         <ul class="nav-list">
             <li><a href="TelaInicial.php">Início</a></li>
-            <li><a href="Dispositivos.php">Dispositivos</a></li>
-            <li><a href="Configuracao.php">Configurações</a></li>
+            <li><a href="Dispositivos.php">Dados</a></li>
+            <li><a href="Configuracao.php">Dispositivos</a></li>
             <li class="sair"><a href="../Controller/logoutController.php">SAIR</a></li>
         </ul>
     </nav>

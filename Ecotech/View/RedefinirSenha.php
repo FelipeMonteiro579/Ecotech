@@ -22,7 +22,7 @@
         <form method="POST" action="">
             <label for="email">Nova senha: </label>
             <input type="text" name="nova_senha" required>
-            <label for="email">Confirar nova senha: </label>
+            <label for="email">Confirmar nova senha: </label>
             <input type="text" name="confirmacao_nova_senha" required>
             <button class="enviar" name="redefinir" type="submit">Redefinir</button>
         </form>
